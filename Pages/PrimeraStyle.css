@@ -1,0 +1,264 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Slab:wght@500&family=Quicksand:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Anton&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Passion+One&family=Ruda:wght@900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Ruda:wght@900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Raleway&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Zilla+Slab&display=swap');
+
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: rgb(255, 255, 255);
+}
+
+.todo{
+    margin-top: 10px;
+    display: flex;
+    flex-direction: column;
+}
+
+.encabezado{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.navegador {
+    width: 250px;
+    height: 20px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: auto;
+    align-items: center;
+    justify-items: center;
+}
+.navegador span.inicio {
+    align-self: center;
+    justify-self: start;
+    grid-column: 1 / 2;
+    grid-row: 1 / 2;
+    
+}
+.navegador span.segunda {
+    align-self: center;
+    justify-self: end;
+    grid-column: 2 / 4;
+    grid-row: 1 / 2;
+    
+}
+a{
+    color: rgb(2, 2, 2);
+    font-family: 'Quicksand', sans-serif;
+    text-decoration: none;
+    /*display: flex;
+    flex-direction: row;*/
+    letter-spacing: 1px;
+    font-size: 13px; 
+}
+a:hover{
+    color: rgb(177, 189, 206);
+}
+
+.titulo{
+    width: 280px;
+    height: 170px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 2fr;
+    align-items: center;
+    justify-items: center;
+    margin-top: 15px;
+}
+.titulo h1{
+    font-family: 'Raleway', sans-serif;
+    font-size: 34px;
+    text-align: center;
+    letter-spacing: 4px;
+    color: rgb(202, 192, 56);
+    grid-column: 1 / 4;
+    grid-row: 1 / 2;
+}
+.articuno{
+    grid-column: 1 / 2;
+}
+.moltres{
+    grid-column: 2 / 3;
+}
+.zapdos{
+    grid-column: 3 / 4;
+}
+
+p{
+    font-family: 'Quicksand', sans-serif;
+    color: rgb(94, 91, 91);
+    margin-bottom: 30px;
+    text-align: center;
+    letter-spacing: 2px;
+    margin-top: 25px;
+    font-size: 20px;
+}
+
+.general{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.contenedor{
+    border: 2px solid lightblue; background-color: rgb(241, 240, 240);
+    height: 240px;
+    width: 240px;
+    margin-bottom: 20px;
+    padding: 5px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 3fr 1fr;
+    align-items: center;
+    justify-items: center;
+}
+
+.contenedor .numero{
+    font-family: 'Roboto Slab', serif;
+    font-size: 20px;
+    grid-column: 1 / 2;
+    grid-row: 1 / 2;
+}
+
+.contenedor .nombre{
+    font-family: 'Passion One', cursive;
+    font-size: 30px;
+    letter-spacing: 1px;
+    grid-column: 2 / 5;
+    grid-row: 1 / 2;
+    justify-self: start;
+}
+
+.contenedor img{
+    grid-column: 1 / 5;
+    grid-row: 2 / 3;
+}
+
+.tipo1{
+    font-family: 'Ruda', sans-serif;
+    font-size: 15px; 
+    grid-column: 1 / 3;
+    grid-row: 3 / 4;
+    
+}
+
+.tipo2{
+    font-family: 'Ruda', sans-serif;
+    font-size: 15px;
+    grid-column: 3 / 5;
+    grid-row: 3 / 4;
+}
+
+.planta{color: green}
+.veneno{color: purple;}
+.fuego{color: darkred}
+.volador{color:cornflowerblue}
+.agua{color: darkblue}
+.bicho{color: coral}
+.normal{color: palevioletred}
+.electrico{color:rgb(172, 184, 8)}
+.tierra{color: rgb(136, 151, 67)}
+.roca{color: maroon}
+.hada{color: rgb(177, 130, 177)}
+.lucha{color: rgb(116, 113, 89)}
+.psiquico{color: rgb(185, 142, 61)}
+.fantasma{color: rgb(56, 56, 202)}
+.hielo{color: rgb(116, 116, 187)}
+.dragon{color: blueviolet}
+.acero{color: gray;}
+
+.piedepagina{
+    background-color: rgb(27, 27, 27);
+    height: 200px;
+    
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 5fr 1fr;
+}
+.piedepagina p.siguenos {
+    font-family: 'Zilla Slab', serif;
+    font-size: 12px;
+    color: white;
+    grid-column: 1 / 2;
+    grid-row: 1 / 2;
+    margin: 30px 10px;
+    justify-self: start;
+}
+.piedepagina a{
+    color: gray;
+    width: 100px;
+    grid-column: 1 / 2;
+    grid-row: 1 / 2;
+    margin: 60px 25px;
+}
+.piedepagina a:hover{
+    color: rgb(94, 94, 94);
+}
+.piedepagina img{
+    grid-column: 2 / 3;
+    grid-row: 1 / 2;
+    justify-self: center;
+    align-self: center;
+}
+.piedepagina p.pokemania {
+    font-family: 'Zilla Slab', serif;
+    font-size: 10px;
+    color: white;
+    grid-column: 1 / 3;
+    grid-row: 2 / 3;
+    justify-self: center;
+    align-self: end;
+}
+
+
+
+
+
+@media only screen and (min-width: 800px) {
+    .navegador{
+        width: 70%;
+    }
+    .titulo{
+        width: 800px;
+        height: 180px;
+    }
+    .titulo h1{
+        font-size: 50px;
+        letter-spacing: 8px;
+    }
+    .general{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        align-items: center;
+        justify-items: center;
+        margin-right: 120px;
+        margin-left: 120px;
+        row-gap: 40px;
+    }
+    .piedepagina p.siguenos{
+        margin: 30px 60px;
+    }
+    .piedepagina a{
+        margin: 50px 60px;
+    }
+    .piedepagina img{
+        justify-self: end;
+        margin-right: 60px;
+    }
+}
+
+
+
+
+
